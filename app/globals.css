@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 1px solid #c1c1c1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #e1e1e1, #c1c1c1);
+    border: 1px solid #a1a1a1;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #d1d1d1, #b1b1b1);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+  }
+}
+
+.xp-button {
+  font-family: "MS Sans Serif", sans-serif;
+}
+
+.xp-button:hover {
+  background: linear-gradient(to bottom, #e1e1e1, #c1c1c1);
+}
+
+.xp-button:active {
+}
+
+@keyframes windowOpen {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.window-enter {
+  animation: windowOpen 0.2s ease-out;
+}
+
+.cursor-xp {
+  cursor: url('https://images.vexels.com/media/users/3/131771/isolated/svg/052dd0c023d9db3d5244875791c71c54.svg'), auto;
+}
