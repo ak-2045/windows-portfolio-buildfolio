@@ -202,7 +202,7 @@ export default function Desktop() {
       action: openIE
     },
     {
-      icon: <img src="https://cdn.creazilla.com/icons/7915997/github-icon-lg.png" alt="GitHub" className="w-8 h-8" />,
+      icon: <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-github-3d-icon-download-in-png-blend-fbx-gltf-file-formats--logo-social-media-pack-logos-icons-6491025.png" alt="GitHub" className="w-8 h-8" />,
       label: "GitHub",
       action: openGitHub
     },
